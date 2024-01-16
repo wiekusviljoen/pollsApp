@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login as User</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>User Registration</title>
+
 </head>
 
 <body>
@@ -15,7 +15,6 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
             background-image: url('https://www.nbc.com/generetic/images/nbc-background.png');
             background-size: cover;
             justify-content: center;
@@ -49,42 +48,27 @@
             color: #fff;
             border: none;
             cursor: pointer;
-            margin-bottom: 10px;
         }
 
         button:hover {
             background-color: #45a049;
         }
-
-        .register-link {
-            text-align: center;
-        }
-
-        .register-link a {
-            color: #4caf50;
-        }
-
-        .register-link a:hover {
-            color: #45a049;
-        }
     </style>
 
     <div class="container">
-        <h1>Login as User</h1>
         <form action="{% url 'user_auth:authenticate_user' %}" method="post">
             {% csrf_token %}
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="User" required>
+            <input type="text" id="username" name="username" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Login</button>
-        </form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
 
-        <div class="register-link">
-            <p>Don't have an account? <a href="{% url 'user_auth:register' %}">Register</a></p>
-        </div>
+            <button type="submit">Register</button>
+        </form>
     </div>
 </body>
 

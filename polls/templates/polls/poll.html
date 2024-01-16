@@ -48,6 +48,7 @@
     <div class="container">
         <h1 class="display-4 text-center">Polls</h1>
         <ul class="list-group">
+            {% if user.is_authenticated %}
             {% for question in latest_question_list %}
             <li class="list-group-item">
                 <a href="{% url 'polls:detail' question.id %}" class="text-decoration-none">
@@ -55,6 +56,7 @@
                 </a>
             </li>
             {% endfor %}
+            {% endif %}
         </ul>
     </div>
 

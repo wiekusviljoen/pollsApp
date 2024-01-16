@@ -28,3 +28,8 @@ def show_user(request):
         "username": request.user.username,
         "password": request.user.password
     })
+
+def register(request):
+    return render(request, 'authentication/register.html', {
+        
+    })

@@ -47,6 +47,18 @@
         a:hover {
             color: #0056b3;
         }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
     <title>{{ question.question_text }}</title>
 </head>
@@ -63,6 +75,7 @@
         </ul>
 
         <a href="{% url 'polls:detail' question.id %}" class="text-decoration-none">Vote again?</a>
+        <a href="{% url 'polls:index' %}"><button>Go Home</button></a>
     </div>
 
 
