@@ -9,12 +9,14 @@
 </head>
 
 <body>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
             background-image: url('https://www.nbc.com/generetic/images/nbc-background.png');
             background-size: cover;
             justify-content: center;
@@ -48,26 +50,34 @@
             color: #fff;
             border: none;
             cursor: pointer;
+            margin-bottom: 10px;
         }
 
         button:hover {
             background-color: #45a049;
         }
+
+        .register-link {
+            text-align: center;
+        }
+
+        .register-link a {
+            color: #4caf50;
+        }
+
+        .register-link a:hover {
+            color: #45a049;
+        }
+
+        .input {
+            background-color: #35ec3e;
+        }
     </style>
-
     <div class="container">
-        <form action="{% url 'user_auth:authenticate_user' %}" method="post">
+        <form method="POST" action="">
             {% csrf_token %}
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-
-            <button type="submit">Register</button>
+            {{form.as_p}}
+            <input class="input" type="submit" name="Create User">
         </form>
     </div>
 </body>

@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate, login
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 
+
 # Create your views here.
 def user_login(request): 
     return render(request, 'authentication/login.html')
@@ -29,7 +30,33 @@ def show_user(request):
         "password": request.user.password
     })
 
-def register(request):
-    return render(request, 'authentication/register.html', {
-        
-    })
+
+
+
+
+    # yourapp/views.py
+from django.shortcuts import render, redirect
+#from .forms import RegisterForm
+from django.contrib.auth.models import User
+from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth.forms import UserCreationForm
+
+def register_user(request):
+    form = UserCreationForm()
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+            
+            
+            # Create a new user
+            #user = User.objects.create_user(username=username, password=password, first_name=first_name)
+
+            # Optionally, you can log in the user after registration
+            
+
+    context = {'form': form}
+    
+
+    return render(request, 'authentication/register.html', context)
