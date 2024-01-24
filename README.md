@@ -3,6 +3,7 @@
 # Description : This Poll Application can be used to vote on certain text, Whether it is answers to questions or voting on which athlete is the best etc.
 
 # Table of Contents : 
+
 Installation
 
 Usage
@@ -12,15 +13,21 @@ Screenshots
 Credits
 
 # Installation :
+
 Installation steps
+
 git clone https://github.com/wiekusviljoen/pollsApp.git
+
 cd pollsApp
+
 pip install -r requirements.txt
 
 # Usage :
+
 python main.py
 
 # Screenshots : 
+
 Here is the login page:
 
 ![Polls login](https://github.com/wiekusviljoen/pollsApp/assets/92153476/989adafa-a7a3-4e08-83aa-a03f7a5f6371)
@@ -42,5 +49,7 @@ This is where the user can see all the vote results to see which answer is winni
 ![polls vote results](https://github.com/wiekusviljoen/pollsApp/assets/92153476/c4eefb5b-8203-42a8-afde-59c1462b0d64)
 
 # Credits : 
+
 Author : Petrus Viljoen
+
 Bootcamp : HyperionDev : https://www.hyperiondev.com/
