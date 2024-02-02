@@ -10,7 +10,7 @@
 
 [Screenshots](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#screenshots-)
 
-[Credits]
+[Credits](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#credits-)
 
 # Installation :
 
