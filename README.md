@@ -20,6 +20,8 @@ cd pollsApp
 
 pip install -r requirements.txt
 
+python manage.py runserver
+
 # Usage :
 
 Here is the login page:
