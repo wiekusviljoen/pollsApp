@@ -6,11 +6,11 @@
 
 [Installation](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#installation-)
 
-Usage
+[Usage](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#usage-)
 
-Screenshots
+[Screenshots](https://github.com/wiekusviljoen/pollsApp/edit/main/README.md#table-of-contents-)
 
-Credits
+[Credits]
 
 # Installation :
 
