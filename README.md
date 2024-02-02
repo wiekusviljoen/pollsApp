@@ -8,8 +8,6 @@
 
 [Usage](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#usage-)
 
-[Screenshots](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#screenshots-)
-
 [Credits](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#credits-)
 
 # Installation :
@@ -23,10 +21,6 @@ cd pollsApp
 pip install -r requirements.txt
 
 # Usage :
-
-python main.py
-
-# Screenshots : 
 
 Here is the login page:
 
