@@ -24,7 +24,7 @@ python manage.py runserver
 
 # Usage :
 
-Here is the login page:
+Here is the login page where you can login in if you have already registered. If not, then click register:
 
 ![Polls login](https://github.com/wiekusviljoen/pollsApp/assets/92153476/989adafa-a7a3-4e08-83aa-a03f7a5f6371)
 
