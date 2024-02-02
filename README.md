@@ -4,7 +4,7 @@
 
 # Table of Contents : 
 
-Installation
+[Installation](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#usage-)
 
 Usage
 
