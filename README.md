@@ -8,7 +8,7 @@
 
 [Usage](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#usage-)
 
-[Screenshots](https://github.com/wiekusviljoen/pollsApp/edit/main/README.md#table-of-contents-)
+[Screenshots](https://github.com/wiekusviljoen/pollsApp/blob/main/README.md#screenshots-)
 
 [Credits]
 
